@@ -1,0 +1,11 @@
+---
+- name: Install default Apache Web Server
+  hosts: all
+  become: yes
+
+
+  tasks:
+  - name: Install Apache WebServer
+    apt:  name=apache2 state=latest
+
+
